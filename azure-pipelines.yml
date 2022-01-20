@@ -22,8 +22,7 @@ steps:
 
 - script: |
     npm i express --if-present
-    npm run dev --if-present
-  displayName: 'npm express and dev'
+  displayName: 'npm express'
 
 
 - task: ArchiveFiles@2
