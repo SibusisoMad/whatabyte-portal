@@ -17,11 +17,12 @@ steps:
 
 - script: |
     npm install --save-dev nodemon
-  displayName: 'npm install'
+    npm run build --if-present
+  displayName: 'npm install and build'
 
 - script: |
-    npm i express
-    npm run dev
+    npm i express --if-present
+    npm run dev --if-present
   displayName: 'npm express and dev'
 
 
